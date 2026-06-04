@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-content: center;
+            height: 100vh;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 400px;
+            background-color: orange;
+            font-size: 20px;
+            animation: bg 4s ease infinite;
+        }
+        @keyframes bg {
+            0%{
+                background-color: bisque;
+            }
+            50%{
+                background-color: rgb(163, 15, 37);
+            }
+            60%{
+                background-color: rgb(117, 141, 40);
+            }
+            100%{
+                background-color: rgb(2, 124, 255);
+            }
+            
+        }
+    </style>
+</head>
+<body bgcolor="purple">
+    <form action="">
+        <div class="wrapper">
+            <label for="inputSeed">Enter your Seed</label> <br>
+            <input type="text" id="inputSeed" placeholder="enter your seed" required> <br>
+            <button type="button">submit</button> 
+        </div>
+    </form>
+    <script src="mersenneTwister.js"></script>
+</body>
+</html>
